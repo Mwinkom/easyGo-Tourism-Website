@@ -99,7 +99,7 @@ h2{
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23150984' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #fff;
     padding: 5%;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .ptext-light{ 
@@ -232,11 +232,29 @@ background: linear-gradient(0deg, rgba(242,255,255,1) 0%, rgba(234,238,255,1) 10
     color:#2514e3;
   }
 
-  .card .card-body p{
+  .card .card-body p, .grey-text{
      color: #6c757d;
   }
-  
 
+  /* Book Tour */
+
+  .book-btn:hover {
+    color:#1204B5;
+    font-weight: 550;
+  }
+  
+  /* Meet the Team */
+  .card-body .card-name{
+    color: #1204B5;
+  }
+
+  .team-card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  div .card .card-body .card-position{
+    color:#de7a00;
+  }
 
 
 
