@@ -1,0 +1,242 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-weight: 650;
+}
+
+#current-page{
+    color: #1204B5;
+    font-weight: 600;
+}
+
+
+/* CAROUSEL */
+.c-item {
+    height: 450px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+
+
+#explore-btn, #login-btn, .customBtn{
+    background-color: #1204B5;
+    color: #fff;
+    border: none;
+}
+
+#login-btn:hover, .customBtn:hover {
+    background-color: #2815ff;
+    color: #fff;
+}
+
+#explore-btn:hover{
+    background-color:#1204B5;
+    border: 2px solid white;
+}
+
+#search-btn:hover {
+    background-color:#1204B5;  
+}
+
+/* Card */
+    .tourCards{
+    margin-bottom: 7%;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+}
+
+.perPerson{
+    font-size: 0.8em;
+    color: #707070;
+    margin-bottom: 0;
+}
+
+.cardPrice{
+    color: #3964ff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.cardHeader{
+    color: #de7a00;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* Why easyGo */
+.blueSection{
+    background-color: #0f066c;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23150984' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #fff;
+    padding: 5%;
+    margin: 30px 0;
+}
+
+.ptext-light{ 
+    color: rgb(208, 223, 255);
+}
+
+
+/* Reviews */
+
+.testimonial-card {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+  }
+  .testimonial-card .imgPerson {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .testimonial-card h5 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #1204B5;
+  }
+  .testimonial-card p {
+    color: #6c757d;
+  }
+  .testimonial-group .testimonial-item {
+    display: flex;
+    justify-content: center;
+   
+  }
+ 
+/* Footer */
+footer{
+    background-color: #0f066c;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23150984' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    
+}
+
+.textSmall {
+    font-size: small; 
+    color: rgb(185, 207, 255);
+}
+
+ul li i, div i{
+    color: #4992ff;
+}
+
+.copyright{
+    font-size: 0.7em; 
+    color: rgb(104, 130, 188);
+}
+
+.footerBottom{
+    background-color: #0a044e;
+
+}
+
+/* Quick Links Hover Effect */
+.quick-links ul li a {
+    font-size: small; 
+    color: rgb(185, 207, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .quick-links ul li a:hover {
+    color: #ff9900; /* Highlight color */
+  }
+  
+  /* Social Media Icons Hover Effect */
+  .social-icons a i {
+    font-size: small; 
+    color: rgb(185, 207, 255);
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover i {
+    color: #ff9900; /* Highlight color */
+  }
+
+
+/* ABOUT US */
+
+.hero-section {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+
+  /* Image Layer */
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/Solitary Traveler at Airport.jpeg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%); /* Darkens the image */
+    z-index: 1; /* Places the image behind the text */
+  }
+
+  /* Text Layer */
+  .hero-text {
+    position: relative;
+    z-index: 2; /* Places the text above the image */
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+    /* Key Point Cards */
+  .keyPointContainer{
+    background: rgb(242,255,255);
+background: linear-gradient(0deg, rgba(242,255,255,1) 0%, rgba(234,238,255,1) 100%);
+  }
+
+  section .text-center .card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .card .card-body i {
+    color:#2514e3;
+  }
+
+  .card .card-body p{
+     color: #6c757d;
+  }
+  
+
+
+
+
