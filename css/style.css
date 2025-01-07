@@ -14,7 +14,7 @@ h2{
 
 /* CAROUSEL */
 .c-item {
-    height: 450px;
+    height: 568px;
 }
 
 .c-img {
@@ -71,7 +71,7 @@ h2{
 }
 
 .card{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: none;
 }
 
@@ -81,16 +81,28 @@ h2{
     margin-bottom: 0;
 }
 
+.card-img-top{
+  /* width: 326px; */
+  height: 170px;
+  object-fit: cover;
+}
+
 .cardPrice{
-    color: #3964ff;
+    color:#4992ff!important;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.85em;
+    margin-bottom: 0;
+}
+
+.stars{
+  margin: 0;
+  color:#de7a00;
 }
 
 .cardHeader{
-    color: #de7a00;
-    margin-bottom: 6px;
-    font-weight: 600;
+    color:#2c2c2c;
+    font-weight: 650;
+    margin-bottom: 0;
 }
 
 /* Why easyGo */
@@ -178,7 +190,7 @@ ul li i, div i{
   /* Social Media Icons Hover Effect */
   .social-icons a i {
     font-size: small; 
-    color: rgb(185, 207, 255);
+    color: #4a93ff;
     transition: color 0.3s ease;
   }
   
@@ -238,14 +250,14 @@ background: linear-gradient(0deg, rgba(242,255,255,1) 0%, rgba(234,238,255,1) 10
 
   /* Book Tour */
 
-  .book-btn:hover {
+  .book-btn:hover,.halfSection a .book-btn:active  {
     color:#1204B5;
     font-weight: 550;
   }
   
   /* Meet the Team */
   .card-body .card-name{
-    color: #1204B5;
+    color:#2c2c2c;
   }
 
   .team-card{
@@ -257,4 +269,186 @@ background: linear-gradient(0deg, rgba(242,255,255,1) 0%, rgba(234,238,255,1) 10
   }
 
 
+  /* CONTACT US */
+
+
+  /* Image Layer */
+  .hero-image-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/Tranquil Moment at the Airport.jpeg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%); /* Darkens the image */
+    z-index: 1; /* Places the image behind the text */
+  }
+
+
+  /* Contact Form */
+
+  .form{
+    background: rgb(242,255,255);
+    background: linear-gradient(0deg, rgba(242,255,255,1) 0%, rgba(234,238,255,1) 100%);
+  }
+
+  .form-control{
+    color:#454545;
+  }
+
+  .contact-card {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .contact-info {
+    background-color: #0f066c;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23150984' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact-bubble{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+
+  .contact-info h4 {
+    margin-bottom: 15px;
+  }
+
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .social-icons-contact-page a:hover i,  .orangeText{
+    color: #de7a00;
+  }
+
+  .blueText{
+    color: #1204B5;
+  }
+
+
+/* FAQ */
+ 
+  .faq-section {
+    margin-top: 50px;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+  }
+
+  .accordion-button {
+    background:#1204B5;
+    color: white;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: rgb(242,255,255);
+  }
+
+
+
+  /* EXPERIENCES */
+
+ /* Hero Section */
+.hero-section-exp {
+    position: relative;
+    height: 360px;
+    background: url('../assets/images/Serene River Journey1.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero-image-exp {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Search Bar */
+.search-bar-container {
+    top: 95%; /* Adjust for positioning */
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.78);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+.form-label{
+  color:#454545;
+  font-weight: 400;
+  font-size: small;
+}
+
+.customBtn {
+    background-color: #1204B5;
+    color: white;
+    border: none;
+}
+
+.customBtn:hover {
+    background-color: #2815ff;
+}
+
+.explore-card{
+  margin-top:110px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+  .hero-text h1{
+    font-size: 2.1rem;
+  }
+
+    .search-bar-container {
+        top:90%;
+    }
+
+    .explore-card{
+      margin-top:90px;
+    }
+}
+
+/* Pagination */
+.pagination li a{
+  color: #1204B5;
+}
+
+.pagination li a:hover{
+  color:#3964ff;
+  background-color: #ebf3fe;
+}
+
+.pagination li .active{
+  background-color:#1204B5;
+}
+
+.pagination li .disabled{
+  background-color: #d0dff5;
+  color: #7e76d5;
+}
 

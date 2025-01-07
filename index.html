@@ -28,7 +28,7 @@
                 <a class="nav-link active" id="current-page" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Experiences</a>
+                <a class="nav-link" href="experiences.html">Experiences</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#">Curators</a>
@@ -37,7 +37,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
             <a class="btn btn-primary me-4 px-4 py-1" id="login-btn" href="#" role="button" style="font-size: 90%;">Login</a>
@@ -57,95 +57,104 @@
             <div class="carousel-inner">
               <div class="carousel-item active c-item" data-bs-interval="10000">
                 <img src="assets/images/hero.jpg" class="d-block w-100 c-img" alt="location to explore">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 fw-semibold text-uppercase">Travel experiences that feel just right</p>
-                    <h1 class="display-2 fw-bolder text-capitalize">Adventure Awaits</h1>
-                    <button id="explore-btn" class="btn btn-primary px-4 py-2 fs-5 mt-5">Explore Now</button>
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-2 fw-semibold text-uppercase">Travel experiences that feel just right</p>
+                    <h1 class="display-1 fw-bolder text-capitalize mt-1">Adventure Awaits</h1>
+                    <a href="experiences.html"><button id="explore-btn" class="btn btn-primary px-4 py-2 fs-4 mt-5">Explore Now</button></a>
                   </div>
               </div>
               <div class="carousel-item c-item" data-bs-interval="2000">
                 <img src="assets/images/magda-ehlers.jpg" class="d-block w-100 c-img" alt="location to explore">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 fw-semibold text-uppercase">Travel experiences that feel just right</p>
-                    <h1 class="display-2 fw-bolder text-capitalize">Dream Big</h1>
-                    <button id="explore-btn" class="btn btn-primary px-4 py-2 fs-5 mt-5">Explore Now</button>
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-2 fw-semibold text-uppercase">Travel experiences that feel just right</p>
+                    <h1 class="display-1 fw-bolder text-capitalize mt-1">Dream Big</h1>
+                    <a href="experiences.html"><button id="explore-btn" class="btn btn-primary px-4 py-2 fs-4 mt-5">Explore Now</button></a>
                   </div>
               </div>
               <div class="carousel-item c-item">
                 <img src="assets/images/kyoto.jpg" class="d-block w-100 c-img" alt="location to explore">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 fw-semibold text-uppercase">Travel experiences that feel just right</p>
-                    <h1 class="display-2 fw-bolder text-capitalize">Wander Freely</h1>
-                    <button id="explore-btn" class="btn btn-primary px-4 py-2 fs-5 mt-5">Explore Now</button>
+                <div class="carousel-caption top-0 mt-5">
+                    <p class="mt-5 fs-2 fw-semibold text-uppercase">Travel experiences that feel just right</p>
+                    <h1 class="display-1 fw-bolder text-capitalize mt-1">Wander Freely</h1>
+                    <a href="experiences.html"><button id="explore-btn" class="btn btn-primary px-4 py-2 fs-4 mt-5">Explore Now</button></a>
                   </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
           </div>
 
 
           <!-- Search Form -->
-          <div class="container">
+          <!-- <div class="container">
             <form class="my-4 mx-4 mb-5 d-flex" role="search">
               <input class="form-control mx-3" type="search" placeholder="Explore locations" aria-label="Search">
               <button class="btn btn-outline-primary" id="search-btn" type="submit">Search</button>
             </form>
-          </div>
+          </div> -->
 
           <!-- Card -->
           <div class="container tourCards pb-3 mb-5 ">
-            <h2 class=" mb-2 px-2">Popular Spots</h2>
-            <p class="px-2" style="color: #707070;">Enjoy extraordinary experiences</p>
+            <h2 class=" mb-2 mt-5 px-2 text-center text-md-start">Popular Spots</h2>
+            <p class="px-2 text-center text-md-start" style="color: #707070;">Enjoy extraordinary experiences</p>
 
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4 px-2">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4 px-2 mx-5 mx-sm-0 mx-lg-0">
               <div class="col">
                 <div class="card h-100">
-                  <img src="assets/images/cancun-sm.jpg" class="card-img-top" alt="Cancun" width="50%">
+                  <img src="assets/images/statue of liberty.jpg" class="card-img-top" alt="Statue of Liberty">
                   <div class="card-body">
-                    <h5 class="card-title cardHeader" >Cancun, Mexico</h5>
-                    <p class="perPerson">price per person</p>
-                    <p class="card-text cardPrice">GH&#8373;2,500</p>
-                    <a href="#" class="btn customBtn">Details</a>
+                    <h6 class="card-title cardHeader">Statue of Liberty</h6>
+                    <p class="perPerson mb-2 mt-1 fw-medium">
+                      <i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>New York, USA
+                    </p>
+                    <p class="card-text cardPrice">GH&#8373;7,200<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                    <div class="stars mb-3">★★★★★</div>
+                    <a href="#" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="assets/images/bali.jpg" class="card-img-top" alt="Bali">
-                  <div class="card-body">
-                    <h5 class="card-title cardHeader">Kyoto, Japan</h5>
-                    <p class="perPerson">price per person</p>
-                    <p class="card-text cardPrice">GH&#8373;3,000</p>
-                    <a href="#" class="btn customBtn">Details</a>
-                  </div>
-                </div>
-              </div>
+              
               <div class="col">
                 <div class="card h-100">
                   <img src="assets/images/kyoto.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title cardHeader">Bali, Indonesia</h5>
-                    <p class="perPerson">price per person</p>
-                    <p class="card-text cardPrice">GH&#8373;2,400</p>
-                    <a href="#" class="btn customBtn">Details</a>
+                    <h6 class="card-title cardHeader">Hōkan-ji Temple</h6>
+                    <p class="perPerson mb-2 mt-1"><i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>Kyoto, Japan</p>
+                    <p class="card-text cardPrice">GH&#8373;2,400<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                    <div class="stars mb-3">★★★★☆</div>
+                    <a href="#" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
+              
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/cancun-sm.jpg" class="card-img-top" alt="Cancun" width="50%">
+                  <div class="card-body">
+                    <h6 class="card-title cardHeader">Maldives Islands</h6>
+                    <p class="perPerson mb-2 mt-1 fw-medium"><i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>Cancun, Mexico</p>
+                    <p class="card-text cardPrice">GH&#8373;2,500<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                    <div class="stars mb-3">★★★★★</div>
+                    <a href="#" class="btn customBtn btn-sm mb-0">Details</a>
+                  </div>
+                </div>
+              </div>
+
               <div class="col">
                 <div class="card h-100">
                   <img src="assets/images/KwameNkrumahMausoleum.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title cardHeader">Accra, Ghana</h5>
-                    <p class="perPerson">price per person</p>
-                    <p class="card-text cardPrice">GH&#8373;1,100</p>
-                    <a href="#" class="btn customBtn">Details</a>
+                    <h6 class="card-title cardHeader">Kwame Nkrumah Mausoleum</h6>
+                    <p class="perPerson mb-2 mt-1"><i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>Accra, Ghana</p>
+                    <p class="card-text cardPrice">GH&#8373;1,100<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                    <div class="stars mb-3">★★★★☆</div>
+                    <a href="#" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -153,20 +162,20 @@
             </div>
 
             <!-- Why easyGo? -->
-             <div class="container-fluid my-4 d-flex text-center flex-column-reverse align-items-center flex-lg-row text-lg-start justify-content-lg-around blueSection">
-                <div class = "halfSection my-auto p-2">
-                  <h2 class=" mb-4">Why Choose easyGo?</h2>
-                  <p class="ptext-light">At easyGo, we take the stress out of travel planning by connecting you with curated experiences tailored to your interests. Whether you're seeking adventure, cultural exploration, or relaxation, our platform offers trusted tour options designed to deliver unforgettable moments.</p>
-                  <p class="ptext-light"> With seamless booking, secure payment options, and a commitment to quality, we make exploring the world easy, affordable, and exciting. Choose easyGo for a travel experience that’s as effortless as it is extraordinary!</p>
+             <div class="container-fluid my-2 d-flex text-center flex-column-reverse align-items-center flex-lg-row text-lg-start justify-content-lg-around blueSection">
+                <div class = "halfSection my-auto pe-4">
+                  <h2 class=" mb-4 display-4 fw-bold mt-4 mt-lg-0">Why Choose easyGo?</h2>
+                  <p class="ptext-light fs-6">At easyGo, we take the stress out of travel planning by connecting you with curated experiences tailored to your interests. Whether you're seeking adventure, cultural exploration, or relaxation, our platform offers trusted tour options designed to deliver unforgettable moments.</p>
+                  <p class="ptext-light fs-6"> With seamless booking, secure payment options, and a commitment to quality, we make exploring the world easy, affordable, and exciting. Choose easyGo for a travel experience that’s as effortless as it is extraordinary!</p>
                 </div>
-                <div class="my-auto p-4"><img class="rounded" src="assets/images/Joyful Trio in Teal and Green.jpeg" alt="" width="100%"></div>
+                <div class="my-auto p-2"><img class="rounded" src="assets/images/Joyful Trio in Teal and Green.jpeg" alt="" width="100%"></div>
              </div>
 
              <!-- Reviews -->
              <div class="container py-5 px-2 mb-4 ">
               <h2 class="text-center mb-4">What People Say About EasyGo</h2>
               
-                <div class="testimonial-group px-2">
+                <div class="testimonial-group px-2 mx-5 mx-sm-0">
                   <!-- First Slide -->
                   <div class="testimonial-item row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4">
                     <div class="col-lg-3">
