@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" >
 </head>
 <body>
 
@@ -31,7 +31,7 @@
                 <a class="nav-link active" id="current-page" aria-current="page" href="experiences.html">Experiences</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Curators</a>
+                <a class="nav-link" href="curator.html">Curators</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="about.html">About</a>
@@ -58,69 +58,72 @@
         <!-- Search Bar -->
         <div class="search-bar-container position-absolute w-100">
             <div class="container search-bar p-4 mt-5 mt-md-0  mb-5">
-                <form class="row row-cols-2 g-3 align-items-center mx-2 mx-sm-0">
-                    <!-- Dropdown: Location -->
-                    <div class="col-12 col-md-4">
-                        <label for="location" class="form-label"><i class="bi bi-geo-alt-fill me-1 fs-8"></i>Location</label>
-                        <select id="location" class="form-select">
-                          <option value="australia" selected>Australia</option>
-                          <option value="brazil">Brazil</option>
-                          <option value="canada">Canada</option>
-                          <option value="china">China</option>
-                          <option value="egypt">Egypt</option>
-                          <option value="france">France</option>
-                          <option value="ghana">Ghana</option>
-                          <option value="greece">Greece</option>
-                          <option value="indonesia">Indonesia</option>
-                          <option value="italy">Italy</option>
-                          <option value="japan">Japan</option>
-                          <option value="kenya">Kenya</option>
-                          <option value="mexico">Mexico</option>
-                          <option value="nigeria">Nigeria</option>
-                          <option value="senegal">Senegal</option>
-                          <option value="scotland">Scotland</option>
-                          <option value="south-africa">South Africa</option>
-                          <option value="spain">Spain</option>
-                          <option value="switzerland">Switzerland</option>
-                          <option value="thailand">Thailand</option>
-                          <option value="uae">UAE</option>
-                          <option value="uk">UK</option>
-                          <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <!-- Dropdown: Category -->
-                    <div class="col-md-4">
-                        <label for="category" class="form-label"><i class="bi bi-globe me-1 fs-8 "></i>Category</label>
-                        <select id="category" class="form-select">
-                            <option value="adventure" selected>Adventure</option>
-                            <option value="relaxation">Relaxation</option>
-                            <option value="cultural">Cultural</option>
-                            <option value="cultural">Lifestyle</option>
-                        </select>
-                    </div>
-                    <!-- Dropdown: Average Price -->
-                    <div class="col-md-4">
-                        <label for="price" class="form-label"><i class="bi bi-tags-fill me-1 fs-8"></i>Avg. Price</label>
-                        <select id="price" class="form-select">
-                          <option value="500" selected>GH&#8373;500 - GH&#8373;1000</option>
-                          <option value="1000">GH&#8373;1000 - GH&#8373;3000</option>
-                          <option value="2000">GH&#8373;3000 - GH&#8373;5000</option>
-                          <option value="5000">GH&#8373;5000 - GH&#8373;7000</option>
-                          <option value="7000">GH&#8373;7000 - GH&#8373;10,000</option>
-                        </select>
-                    </div>
-                    <!-- Search bar -->
-                    <div class="col-12 col-md-8">
-                        <input type="text" class="form-control" id="tourSearch" placeholder="Search Locations" style>
-                    </div>
-                    <!-- Search Button -->
-                    <div class=" col-3 col-md-2 d-flex align-items-center">
-                        <button type="submit" class="btn btn-primary w-100 customBtn ">Search</button>
-                    </div>
-                </form>
-            </div>
+              <form class="row row-cols-2 g-3 align-items-center mx-2 mx-sm-0">
+                <!-- Dropdown: Location -->
+                <div class="col-12 col-md-4">
+                    <label for="location" class="form-label"><i class="bi bi-geo-alt-fill me-1 fs-8"></i>Location</label>
+                    <select id="location" class="form-select">
+                      <option value="" selected>Select Country</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="Canada">Canada</option>
+                      <option value="China">China</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="France">France</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Senegal">Senegal</option>
+                      <option value="Scotland">Scotland</option>
+                      <option value="South-Africa">South Africa</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="UAE">UAE</option>
+                      <option value="UK">UK</option>
+                      <option value="USA">USA</option>
+                    </select>
+                </div>
+                <!-- Dropdown: Category -->
+                <div class="col-md-4">
+                    <label for="category" class="form-label"><i class="bi bi-globe me-1 fs-8 "></i>Category</label>
+                    <select id="category" class="form-select">
+                        <option value="" selected>Select Category</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="relaxation">Relaxation</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="lifestyle">Lifestyle</option>
+                    </select>
+                </div>
+                <!-- Dropdown: Average Price -->
+                <div class="col-md-4">
+                    <label for="price" class="form-label"><i class="bi bi-tags-fill me-1 fs-8"></i>Avg. Price</label>
+                    <select id="price" class="form-select">
+                      <option value="" selected>Select Price Range</option>
+                      <option value="500">GH&#8373;500 - GH&#8373;1000</option>
+                      <option value="1000">GH&#8373;1000 - GH&#8373;3000</option>
+                      <option value="2000">GH&#8373;3000 - GH&#8373;5000</option>
+                      <option value="5000">GH&#8373;5000 - GH&#8373;7000</option>
+                      <option value="7000">GH&#8373;7000 - GH&#8373;10,000</option>
+                    </select>
+                </div>
+                <!-- Search bar -->
+                <div class="col-12 col-md-8">
+                    <input type="text" class="form-control" id="tourSearch" placeholder="Search Locations" style>
+                </div>
+                <!-- Search Button -->
+                <div class=" col-3 col-md-2 d-flex align-items-center">
+                    <button type="submit" class="btn btn-primary customBtn ">Search</button>
+                </div>
+            </form>
         </div>
-    </section>
+      </div>
+  </section>
 
     <!-- Tour Card -->
     <section class="container-fluid explore-card pb-5 pt-5 pt-md-2">
@@ -128,7 +131,7 @@
         <h2 class=" mb-2 px-2 text-center text-md-start">Popular Spots</h2>
         <p class="px-2 text-center text-md-start" style="color: #707070;">Enjoy extraordinary experiences</p>
 
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4 px-2 mx-5 mx-sm-0">
+        <div class="tourGroup row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4 mx-2 mx-sm-0">
             <div class="col">
                 <div class="card h-100">
                   <img src="assets/images/victoria peak.jpg" class="card-img-top" alt="Victoria Peak">
@@ -139,7 +142,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;6,800<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★☆</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Victoria%20Peak&image=assets/images/victoria%20peak.jpg&location=China,%20Hong%20Kong&price=6800&rating=4" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -154,7 +157,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;5,200<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Santorini%20Cliffs&image=assets/images/santorini.jpg&location=Santorini,%20Greece&price=5200&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -169,7 +172,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;5,700<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★☆</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Gyeongbokgung%20Palace&image=assets/images/seoul.jpg&location=Seoul,%20South%20Korea&price=5700&rating=4" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -184,7 +187,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;5,900<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Arashiyama%20Bamboo%20Forest&image=assets/images/kyoto.jpg&location=Kyoto,%20Japan&price=5900&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -199,7 +202,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;5,400<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Trevi%20Fountain&image=assets/images/rome.jpg&location=Rome,%20Italy&price=5400&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -214,7 +217,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;4,900<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★☆</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Edinburgh%20Castle&image=assets/images/edinburgh.jpg&location=Edinburgh,%20Scotland&price=4900&rating=4" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -229,7 +232,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;6,300<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Louvre%20Museum&image=assets/images/paris.jpg&location=Paris,%20France&price=6300&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                   </div>
                 </div>
               </div>
@@ -244,7 +247,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;2,800<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Cape%20Coast%20Castle&image=assets/images/cape-coast.jpg&location=Cape%20Coast,%20Ghana&price=2800&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                 </div>
                 </div>
             </div>
@@ -259,7 +262,7 @@
                   </p>
                   <p class="card-text cardPrice">GH&#8373;5,700<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                   <div class="stars mb-3">★★★★☆</div>
-                  <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                  <a href="details.html?title=Drakensberg%20Mountains&image=assets/images/drakensberg.jpg&location=KwaZulu-Natal,%20South%20Africa&price=5700&rating=4" class="btn customBtn btn-sm mb-0">Details</a>
                 </div>
               </div>
             </div>
@@ -274,7 +277,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;4,800<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Yankari%20Game%20Reserve&image=assets/images/yankari.jpg&location=Bauchi,%20Nigeria&price=4800&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                 </div>
                 </div>
             </div>
@@ -290,7 +293,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;6,800<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★☆</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Kruger%20National%20Park&image=assets/images/kruger.jpg&location=Mpumalanga,%20South%20Africa&price=6800&rating=4" class="btn customBtn btn-sm mb-0">Details</a>
                 </div>
                 </div>
             </div>
@@ -306,7 +309,7 @@
                     </p>
                     <p class="card-text cardPrice">GH&#8373;4,200<span style="font-weight: 400; font-size:x-small">/per person</span></p>
                     <div class="stars mb-3">★★★★★</div>
-                    <a href="details.html" class="btn customBtn btn-sm mb-0">Details</a>
+                    <a href="details.html?title=Obudu%20Mountain%20Resort&image=assets/images/obudu.jpg&location=Cross%20River,%20Nigeria&price=4200&rating=5" class="btn customBtn btn-sm mb-0">Details</a>
                 </div>
                 </div>
             </div>
@@ -353,10 +356,10 @@
             <div class="col-lg-2 col-md-6 mb-4 quick-links">
               <h5 class="text-uppercase fw-bold footHeader">Quick Links</h5>
               <ul class="list-unstyled">
-                <li><a href="#services" class="text-decoration-none textSmall">Services</a></li>
-                <li><a href="#destinations" class="text-decoration-none textSmall">Destinations</a></li>
-                <li><a href="#testimonials" class="text-decoration-none textSmall">Testimonials</a></li>
-                <li><a href="#contact" class="text-decoration-none textSmall">Contact</a></li>
+                <li><a href="about.html" class="text-decoration-none textSmall">Services</a></li>
+                <li><a href="experiences.html" class="text-decoration-none textSmall">Destinations</a></li>
+                <li><a href="index.html#testimonialGrp" class="text-decoration-none textSmall">Testimonials</a></li>
+                <li><a href="contact.html" class="text-decoration-none textSmall">Contact</a></li>
               </ul>
             </div>
       
@@ -375,10 +378,10 @@
             <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="text-uppercase fw-bold footHeader">Follow Us</h5>
               <div class="social-icons">
-                <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-twitter fs-5"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-instagram fs-5"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="https://web.facebook.com/watch/?v=1826624251050291" class="me-3" target="_blank"><i class="bi bi-facebook fs-5"></i></a>
+                <a href="https://x.com/easygo_gh" class="me-3" target="_blank"><i class="bi bi-twitter fs-5"></i></a>
+                <a href="https://www.instagram.com/easygo_gh/" class="me-3" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
+                <a href="https://www.linkedin.com/showcase/easygotours/" class="me-3" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
               </div>
             </div>
             
@@ -400,5 +403,7 @@
     <script src="js/script.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/experiences.js"></script>
 </body>
 </html>

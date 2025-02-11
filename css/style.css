@@ -43,7 +43,11 @@ h2{
     opacity: 1;
 }
 
-
+#userCircle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
 
 #explore-btn, #login-btn, .customBtn{
     background-color: #1204B5;
@@ -617,11 +621,43 @@ form .social-login a:hover {
 }
 
 /* Booking Section */
+/* Booking Section */
 .booking-section {
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+.payment-icons img {
+  margin: 0 10px;
+
+}
+
+.btn-custom {
+  background-color: #1204B5;
+  border: 1px solid #1204B5;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #1d4eff;
+}
+
+#bookingMessage {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Reviews Section */
@@ -641,16 +677,6 @@ form .social-login a:hover {
   border-bottom: none;
 }
 
-.btn-custom {
-  background-color: #1204B5;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.btn-custom:hover {
-  background-color: #3964ff;
-}
-
 /* Curator Info */
 .curator-info {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -660,4 +686,28 @@ form .social-login a:hover {
 
 .tour-overview-section{
   background: #fff;
+}
+
+/* CURATOR PAGE */
+/* Image Layer */
+.hero-image-curator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/images/Tranquil Balcony Vista.jpeg') no-repeat center center;
+  background-size: cover;
+  filter: brightness(50%); /* Darkens the image */
+  z-index: 1; /* Places the image behind the text */
+}
+
+.logout-btn{
+  border: 1.5px solid #de7a00;
+  color: #de7a00;
+}
+
+.logout-btn:hover, .logout-btn:active{
+  background-color: #de7a00!important;
+  color: #fff!important;
 }

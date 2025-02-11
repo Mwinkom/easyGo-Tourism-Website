@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/curator.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" >
+</head>
+<body>
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="index.html"> <img src="assets/images/LogoBlue.png" alt="Logo" width="70px"></a>
+          <button class="navbar-toggler me-3 fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="experiences.html">Experiences</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" id="current-page" aria-current="page" href="curator.html">Curators</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Sidebar for larger screens -->
+            <div class="col-md-3 sidebar d-none d-md-block p-4">
+              <h4 class="text-center mb-4 fw-semibold">Dashboard</h4>
+              <nav class="nav flex-column">
+                <a class="nav-link active mb-2" data-bs-toggle="tab" href="#overview" role="tab"><i class="bi nav-icons bi-speedometer2 me-3"></i>Overview</a>
+                <a class="nav-link mb-2" data-bs-toggle="tab" href="#profile" role="tab"><i class="bi nav-icons bi-person-circle me-3"></i>Profile Management</a>
+                <a class="nav-link mb-2" data-bs-toggle="tab" href="#tours" role="tab"><i class="bi nav-icons bi-map me-3"></i>Tour Management</a>
+                <a class="nav-link mb-2" data-bs-toggle="tab" href="#bookings" role="tab"><i class="bi nav-icons bi-calendar-check me-3"></i>Bookings</a>
+                <a class="nav-link mb-2" data-bs-toggle="tab" href="#payments" role="tab"><i class="bi nav-icons bi-wallet2 me-3"></i>Payments</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#support" role="tab"><i class="bi nav-icons bi-question-circle me-3"></i>Support</a>
+              </nav>
+            </div>
+      
+            <!-- Offcanvas Sidebar for smaller screens -->
+            <div class="d-md-none">
+              <button class="btn btn-custom mt-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                <i class="bi bi-list" style="color: rgb(255, 255, 255);"></i> Menu
+              </button>
+      
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Dashboard</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link active mb-2" data-bs-toggle="tab" href="#overview" role="tab"><i class="bi nav-icons bi-speedometer2 me-3"></i>Overview</a>
+                    <a class="nav-link mb-2" data-bs-toggle="tab" href="#profile" role="tab"><i class="bi nav-icons bi-person-circle me-3"></i>Profile Management</a>
+                    <a class="nav-link mb-2" data-bs-toggle="tab" href="#tours" role="tab"><i class="bi nav-icons bi-map me-3"></i>Tour Management</a>
+                    <a class="nav-link mb-2" data-bs-toggle="tab" href="#bookings" role="tab"><i class="bi nav-icons bi-calendar-check me-3"></i>Bookings</a>
+                    <a class="nav-link mb-2" data-bs-toggle="tab" href="#payments" role="tab"><i class="bi nav-icons bi-wallet2 me-3"></i>Payments</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#support" role="tab"><i class="bi nav-icons bi-question-circle me-3"></i>Support</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+      
+              <!-- Main Content -->
+              <div class="col-md-9">
+                  <div class="tab-content content">
+                      <!-- Overview Section -->
+                      <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                          <h3 class="fw-semibold bluetext">Overview</h3 class="fw-semibold">
+                          <p id="curatorWelcome"></p>
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="section-card text-center">
+                                      <h4 class="fw-semibold fs-3">5</h4>
+                                      <p>Active Tours</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="section-card text-center">
+                                      <h4 class="fw-semibold fs-3">12</h4>
+                                      <p>Pending Bookings</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="section-card text-center">
+                                      <h4 class="fw-semibold fs-3">GH₵1,200</h4>
+                                      <p>Available Balance</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <!-- Profile Management -->
+                      <div class="tab-pane fade" id="profile" role="tabpanel">
+                          <h3 class="fw-semibold">Profile Management</h3 class="fw-semibold">
+                          <form>
+                              <div class="mb-3">
+                                  <label for="curatorName" class="form-label">Name</label>
+                                  <input type="text" id="curatorName" class="form-control" value="John Doe">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="curatorBio" class="form-label">Bio</label>
+                                  <textarea id="curatorBio" class="form-control" rows="4">Experienced travel curator specializing in adventure tours.</textarea>
+                              </div>
+                              <div class="mb-3">
+                                  <label for="curatorContact" class="form-label">Contact Info</label>
+                                  <input type="text" id="curatorContact" class="form-control" value="+233 555 123 456">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="curatorExpertise" class="form-label">Areas of Expertise</label>
+                                  <input type="text" id="curatorExpertise" class="form-control" value="Adventure, Cultural Tours">
+                              </div>
+                              <button type="submit" class="btn btn-custom" onclick="saved()">Save</button>
+                          </form>
+                      </div>
+      
+                      <!-- Tour Management -->
+                      <div class="tab-pane fade" id="tours" role="tabpanel">
+                          <h3 class="fw-semibold">Tour Management</h3 class="fw-semibold">
+                          <button class="btn btn-custom mb-3" id="addTourBtn">+ Add</button>
+                          <p>Manage your existing tours below:</p>
+                  
+
+                          <div class="row row-cols-1 row-cols-sm-2 mx-3" id="tourList"> 
+                            <div class="col tourOption">
+                                <div class="card h-100">
+                                    <img src="assets/images/Table-Mountain-Cape-Town.jpg" class="card-img-top" alt="Table Mountain">
+                                    <div class="card-body">
+                                        <h6 class="card-title cardHeader">Table Mountain</h6>
+                                        <p class="perPerson mb-2 mt-1 fw-medium">
+                                            <i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>Cape Town, South Africa
+                                        </p>
+                                        <p class="card-text cardPrice">GH&#8373;3,600<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                                        <div class="stars mb-2">★★★★☆</div>
+                                        <button type="button" onclick="deleteTour(this)" class="btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col tourOption">
+                                <div class="card h-100">
+                                    <img src="assets/images/colosseum.jpg" class="card-img-top" alt="Colosseum">
+                                    <div class="card-body">
+                                        <h6 class="card-title cardHeader">Colosseum</h6>
+                                        <p class="perPerson mb-2 mt-1 fw-medium">
+                                            <i class="bi bi-geo-alt-fill me-1" style="color:#4992ff;"></i>Rome, Italy
+                                        </p>
+                                        <p class="card-text cardPrice">GH&#8373;5,400<span style="font-weight: 400; font-size:x-small">/per person</span></p>
+                                        <div class="stars mb-2">★★★★★</div>
+                                        <button type="button" onclick="deleteTour(this)" class="btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                          
+                      </div>
+
+                      <!-- Hidden Form (Initially Hidden) -->
+                        <div id="tourFormContainer" class="modal-container d-none mt-5">
+                          <div class="modal-content">
+                              <span class="close-btn" id="closeTourForm">&times;</span>
+                              <h4 class="fw-bold">Add a New Tour</h4>
+
+                              <form id="tourForm">
+                                  <div class="mb-2">
+                                      <label for="tourTitle" class="form-label">Tour Title</label>
+                                      <input type="text" id="tourTitle" class="form-control p-0 px-2" required>
+                                  </div>
+
+                                  <div class="mb-2">
+                                      <label for="tourLocation" class="form-label">Location</label>
+                                      <input type="text" id="tourLocation" class="form-control p-0 px-2" required>
+                                  </div>
+
+                                  <div class="mb-2">
+                                      <label for="tourPrice" class="form-label">Price (GH₵)</label>
+                                      <input type="number" id="tourPrice" class="form-control p-0 px-2" required>
+                                  </div>
+
+                                  <div class="mb-2">
+                                      <label for="tourCategory" class="form-label">Category</label>
+                                      <select id="tourCategory" class="form-select p-0 px-2" required>
+                                          <option value="adventure">Adventure</option>
+                                          <option value="relaxation">Relaxation</option>
+                                          <option value="cultural">Cultural</option>
+                                          <option value="lifestyle">Lifestyle</option>
+                                      </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                      <label for="tourImage" class="form-label ">Image URL</label>
+                                      <input type="file" id="tourImage" class="form-control p-0 px-2" required>
+                                  </div>
+
+                                  <button type="submit" class="btn btn-custom w-100">Save Tour</button>
+                              </form>
+                          </div>
+                        </div>
+
+      
+                      <!-- Bookings -->
+                      <div class="tab-pane fade" id="bookings" role="tabpanel">
+                          <h3 class="fw-semibold">Bookings</h3 class="fw-semibold">
+                          <p>Manage your bookings efficiently:</p>
+                          <ul>
+                              <li>Upcoming Booking - John Doe</li>
+                              <li>Pending Approval - Jane Doe</li>
+                          </ul>
+                      </div>
+      
+                      <!-- Payments -->
+                      <div class="tab-pane fade" id="payments" role="tabpanel">
+                          <h3 class="fw-semibold">Payments</h3 class="fw-semibold">
+                          <p>Check your payment details:</p>
+                          <ul>
+                              <li>Available Balance: GH₵1,200</li>
+                              <li>Recent Transactions</li>
+                          </ul>
+                      </div>
+      
+                      <!-- Support -->
+                      <div class="tab-pane fade" id="support" role="tabpanel">
+                          <h3 class="fw-semibold">Support</h3>
+                          <p>Get help or submit feedback below:</p>
+                          <form>
+                              <div class="mb-3">
+                                  <label for="supportQuery" class="form-label">Your Query</label>
+                                  <textarea id="supportQuery" class="form-control"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-custom" onclick="submit()">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              const firstTab = document.querySelector('.nav-link.active');
+              const tabContent = new bootstrap.Tab(firstTab);
+              tabContent.show();
+          });
+
+          function saved(){
+            alert('Your profile has been updated!');
+          }
+
+          function submit(){
+            alert('Submitted Successfully!');
+          }
+
+          document.addEventListener("DOMContentLoaded", function () {
+          const addTourBtn = document.getElementById("addTourBtn");
+          const tourFormContainer = document.getElementById("tourFormContainer");
+          const closeTourForm = document.getElementById("closeTourForm");
+          const tourForm = document.getElementById("tourForm");
+
+          // Show form when "Add Tour" button is clicked
+          addTourBtn.addEventListener("click", function () {
+              tourFormContainer.classList.remove("d-none");
+          });
+
+          // Hide form when close button is clicked
+          closeTourForm.addEventListener("click", function () {
+              tourFormContainer.classList.add("d-none");
+          });
+
+          // Handle form submission
+          tourForm.addEventListener("submit", function (event) {
+              event.preventDefault();
+
+              const title = document.getElementById("tourTitle").value;
+              const location = document.getElementById("tourLocation").value;
+              const price = document.getElementById("tourPrice").value;
+              const category = document.getElementById("tourCategory").value;
+              const image = document.getElementById("tourImage").value;
+
+              // Example: Save to local storage or database (modify as needed)
+              const newTour = { title, location, price, category, image };
+              let tours = JSON.parse(localStorage.getItem("tours")) || [];
+              tours.push(newTour);
+              localStorage.setItem("tours", JSON.stringify(tours));
+
+              alert("Tour Added Successfully!");
+              tourFormContainer.classList.add("d-none"); // Hide form after submission
+              tourForm.reset(); // Reset the form
+          });
+      });
+
+
+      function deleteTour(button) {
+          if (confirm("Are you sure you want to delete this tour?")) {
+              const tourCard = button.closest(".col.tourOption"); // Find the closest tour container
+              const tourList = document.getElementById("tourList");
+
+              // Remove from UI
+              tourList.removeChild(tourCard);
+
+              // Remove from local storage
+              let tours = JSON.parse(localStorage.getItem("tours")) || [];
+              const tourTitle = tourCard.querySelector(".card-title").textContent.trim(); // Get tour title
+
+              // Filter out the deleted tour
+              tours = tours.filter(tour => tour.title !== tourTitle);
+              localStorage.setItem("tours", JSON.stringify(tours)); // Save updated list
+
+              alert("Tour deleted successfully!");
+          }
+      }
+
+
+      </script>
+      </main>
+
+      <script src="js/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
