@@ -57,4 +57,4 @@ This project is a **fully redesigned and improved version** of the existing easy
 For any inquiries, collaborations, or feedback, feel free to reach out:  
 
 - 📧 **Email**: [mwinkomnaab@gmail.com](mailto:mwinkomnaab@gmail.com)  
-- 🔗 **LinkedIn**: [Mildred Naab](www.linkedin.com/in/mildred-naab-69a803188)  
+- 🔗 **LinkedIn**: [www.linkedin.com/in/mildred-naab-69a803188](www.linkedin.com/in/mildred-naab-69a803188)  
