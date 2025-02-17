@@ -51,3 +51,10 @@ This project is a **fully redesigned and improved version** of the existing easy
 ![Experiences Page](assets/images/tour_cards.png) 
 
 ---
+
+## 📩 Contact  
+
+For any inquiries, collaborations, or feedback, feel free to reach out:  
+
+- 📧 **Email**: [mwinkomnaab@gmail.com](mailto:mwinkomnaab@gmail.com)  
+- 🔗 **LinkedIn**: [Mildred Naab](www.linkedin.com/in/mildred-naab-69a803188)  
